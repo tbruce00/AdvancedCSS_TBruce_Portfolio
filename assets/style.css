@@ -1,0 +1,50 @@
+:root {
+
+}
+
+* {
+
+}
+
+body {
+    margin: 0;
+    font-family: monospace;
+    color: whitesmoke;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://i.pinimg.com/originals/c5/5f/50/c55f506e7ef24d7de7af3649450ff237.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.nav-top {
+    overflow: hidden;
+    background-color: rgb(48, 47, 47);
+}
+
+.nav-top a{
+    margin: 10px;
+    padding: 30px 32px;
+    color:whitesmoke;
+    text-align: center;
+    font-size: 40px;
+    float: left;
+    text-decoration: none;
+}
+
+.nav-top a:hover {
+    box-shadow: inset 0px 0px 10px violet, 0 0 20px violet;
+}
+
+.nav-top-right {
+    float: right;
+    font-size: 40px;
+}
