@@ -8,17 +8,13 @@
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     font-family: monospace;
     color: whitesmoke;
 }
 
 .hero {
     width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/originals/c5/5f/50/c55f506e7ef24d7de7af3649450ff237.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,6 +25,8 @@ body {
 .nav-top {
     overflow: hidden;
     background-color: rgb(48, 47, 47);
+    flex-direction: row;
+
 }
 
 .nav-top a{
@@ -39,6 +37,8 @@ body {
     font-size: 40px;
     float: left;
     text-decoration: none;
+    border-right: 1px solid darkgray;
+    
 }
 
 .nav-top a:hover {
@@ -48,27 +48,87 @@ body {
 
 .nav-top-right {
     float: right;
-    font-size: 40px;
+    font-size: 50px;
 }
 
-h1, h2, h3 {
-    font-size: 35px;
+.columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.About-Me  {
+    display: flex;
+    flex-flow: column wrap;
+    height: 30%;
+    font-size: 45px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color:violet;
-    float: left;
+    border: 5px solid black;
+    padding: 10px;
+    margin: 20px;
+    justify-content: space-between;
+
 }
 
-.column-left {
+#About  {
+    border-bottom: 3px solid darkgray;
+    text-align: center;
+}
+
+p {
+    color: whitesmoke;
+    font-size: 35px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+img {
+    height: 200px;
+    width: auto;
+}
+
+.Projects {
     display: flex;
-    flex-direction: column;
-    justify-content: left;
-    padding: 4rem;
+    flex-flow: column wrap;
+    height: 80%;
+    font-size: 45px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: violet;
+    border: 5px solid black;
+    padding: 15px;
+    margin: 25px;
+    justify-content: space-between;
+    width: 80%;
+    padding: 20px;
+    flex: 1 1 500px;
+}
+
+#Projects {
+    border-bottom: 3px solid darkgray;
+    text-align: center;
+}
+
+.Project-1 {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 320px;
+    background-image: url(https://tbruce00.github.io/Website_Practice/);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+}
+
+.Project-Columns {
+    display: flex;
+    padding: 40px;
+    border-radius: 5px;
+    border: 1px solid;
+    background-image: url(https://i.pinimg.com/originals/c5/5f/50/c55f506e7ef24d7de7af3649450ff237.png);
+    backdrop-filter: blur(30px);
+    width: 30%;
+    grid-gap: 20px;
     
-
 }
 
-.column-right {
-
-}
-
-.About .Project .Contact
