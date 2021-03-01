@@ -1,18 +1,19 @@
 :root {
+--light: #fff;
+--dark: violet;
 
-
-}
-
-* {
 
 }
 
 body {
     margin: 0 auto;
     font-family: monospace;
-    color: whitesmoke;
+    color: var(--light);
     height: 100vh;
     width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
 }
 
 .hero {
@@ -22,19 +23,21 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
+    display: grid;
+    align-items: center;
 }
 
 .nav-top {
     overflow: hidden;
     background-color: rgb(48, 47, 47);
     flex-direction: row;
-
+    
 }
 
 .nav-top a{
     margin: 10px;
     padding: 30px 32px;
-    color:whitesmoke;
+    color: var(--light);
     text-align: center;
     font-size: 40px;
     float: left;
@@ -44,7 +47,7 @@ body {
 }
 
 .nav-top a:hover {
-    box-shadow: inset 0px 0px 10px violet, 0 0 20px violet;
+    box-shadow: inset 0px 0px 10px var(--dark), 0 0 20px var(--dark);
     border-radius: 5px;
 }
 
@@ -58,6 +61,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 
@@ -67,7 +71,7 @@ body {
     height: 30%;
     font-size: 45px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:violet;
+    color: var(--dark);
     border: 5px solid black;
     padding: 25px;
     margin: 20px;
@@ -81,7 +85,7 @@ body {
 }
 
 p {
-    color: whitesmoke;
+    color: var(--light);
     font-size: 35px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -97,7 +101,7 @@ img {
     height: 80%;
     font-size: 45px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: violet;
+    color: var(--dark);
     border: 5px solid black;
     padding: 15px;
     margin: 25px;
@@ -131,7 +135,7 @@ img {
 .Project-Text a {
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0, 0.4); 
-    color: white;
+    color: var(--light);
     font-weight: bold;
     border: 3px solid #f1f1f1;
     position: absolute;
@@ -143,7 +147,6 @@ img {
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
-    position: ;
 }
 
 .Project-Text a:hover {
@@ -167,13 +170,17 @@ img {
     filter: blur(1px); 
 }
 
+a {
+    text-decoration: none;
+}
+
 .Contact {
     display: flex;
     flex-flow: column wrap;
     height: 20%;
     font-size: 45px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: violet;
+    color: var(--dark);
     border: 5px solid black;
     margin: 25px;
     padding: 100px;
@@ -212,19 +219,3 @@ img {
     color: white;
   }
 
-  @media screen and (max-width: 768px) {
-    /* Use flex-direction to stack the navbar, sidebar, and body */
-    main,
-    .nav-top {
-      flex-direction: column;
-    }
-
-  @media only screen and (max-width: 500px) {
-        .hero, 
-        .columns,
-        .nav-top,
-        img {
-            width: 100%;
-        }
-  }
-  

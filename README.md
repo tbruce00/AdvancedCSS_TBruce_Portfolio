@@ -21,6 +21,8 @@ The deployed application displays a webpage that is responsive to different scre
 
 ## URL to Deployed Application
 
-
+https://tbruce00.github.io/AdvancedCSS_TBruce_Portfolio/
 
 ## Screenshot of Application
+
+![Portfolio](./assets/images/screenshot.png)
