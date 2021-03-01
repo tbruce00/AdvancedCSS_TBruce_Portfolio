@@ -215,18 +215,6 @@ a {
 
 @Media screen and (max-width: 768px) {
     body {
-        flex: 0 0 40%;
         flex-direction: column;
-        max-width: 40%;
-    }       
-}
-
-@media screen and (min-width: 1000px) {
-    .nav-top, .nav-top-right {
-        width: 60%;
-    }
-    body {
-        flex: 0 0 20%;
-        max-width: 20%;
     }
 }
