@@ -231,6 +231,10 @@ img {
       color:white;
   }
 
+  .footer {
+      background-color:rgb(66, 73, 92);
+      color: wheat;
+  }
 /* Media Query Responsive Grid */
 
 @Media screen and (max-width: 768px) {
