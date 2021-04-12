@@ -90,6 +90,7 @@ p {
 img {
     height: 200px;
     width: auto;
+    float: left;
 }
 /* Project Section Parent Container */
 .Projects {
