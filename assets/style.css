@@ -232,6 +232,11 @@ img {
       color:white;
   }
 
+  .bi-file-earmark-person {
+      background-color: rgb(189, 126, 9);
+      color: #FFFF;
+  }
+
   .footer {
       background-color:rgb(66, 73, 92);
       color: wheat;
